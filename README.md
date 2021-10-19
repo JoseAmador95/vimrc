@@ -5,7 +5,7 @@ This is my personal `.vimrc` file based on the one from [amix/vimrc](https://git
 The `.vimrc` is available in this link. It can be pulled using `curl`, `wget`, or any web browser.
 
 ```
-curl https://raw.githubusercontent.com/JoseAmador95/vimrc/main/.vimrc > ~/.vimrc
+https://raw.githubusercontent.com/JoseAmador95/vimrc/main/.vimrc
 ```
 
 ### Bash
