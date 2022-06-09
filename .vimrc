@@ -220,9 +220,9 @@ let g:lasttab = 1
 nmap <Leader>tl :exe "tabn ".g:lasttab<CR>
 au TabLeave * let g:lasttab = tabpagenr()
 
-" Naigate through tabs using tj and tk
-noremap tj :tabprev<CR>
-noremap tk :tabnext<CR>
+" Navigate through tabs using J and K
+noremap J :tabprev<CR>
+noremap K :tabnext<CR>
 
 " Opens a new tab with the current buffer's path
 " Super useful when editing files in the same directory
@@ -257,10 +257,6 @@ set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Remap VIM 0 to first non-blank character
 map 0 ^
-
-" Shift-j/k inserts a new line above and below the cursor
-noremap J o<Esc>
-noremap K O<Esc>
 
 " Delete trailing white space on save, useful for some filetypes ;)
 fun! CleanExtraSpaces()
