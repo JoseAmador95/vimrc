@@ -24,6 +24,11 @@ let mapleader = ","
 " Fast saving
 nmap <leader>w :w!<cr>
 
+" Fast quit
+nmap <leader>q :q<cr>
+nmap <leader>Q :q!<cr>
+nmap <leader>x :x<cr>
+
 " :W sudo saves the file
 " (useful for handling the permission-denied error)
 command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
@@ -346,3 +351,4 @@ function! VisualSelection(direction, extra_filter) range
     let @/ = l:pattern
     let @" = l:saved_reg
 endfunction
+
